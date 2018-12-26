@@ -26,3 +26,14 @@ def raw(text):
         try: new_string+=escape_dict[char]
         except KeyError: new_string+=char
     return new_string
+
+----------------
+plain_str = 'newline \n'
+raw_str = r'newline\n'
+plain_str == raw_str
+
+temp_str = "%r" % plain_str
+print(temp_str)
+
+new_raw_str = temp_str[1:-1]
+new_raw_str == raw_str
