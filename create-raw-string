@@ -37,3 +37,17 @@ print(temp_str)
 
 new_raw_str = temp_str[1:-1]
 new_raw_str == raw_str
+---------------
+m = ['my', 'enemy', 'dor']
+s = r' '.join(m)
+s1 = r'my enemy dor'
+s1 == s
+
+--------------
+
+_dRawMap = {8:r'\b', 7:r'\a', 12:r'\f', 10:r'\n', 13:r'\r', 9:r'\t', 11:r'\v'}
+
+def getRawGotStr(s):
+    #
+    return r''.join( [ _dRawMap.get( ord(c), c ) for c in s ] )
+    
