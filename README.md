@@ -1,2 +1,2 @@
 # material-for-python
-Recording material which i want to study but haven't time temporarily
+Placing some materials that I want to study but there is no time currently.
